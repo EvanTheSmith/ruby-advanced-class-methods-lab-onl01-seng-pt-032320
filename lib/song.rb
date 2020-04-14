@@ -65,8 +65,7 @@ class Song
     artist = raw_data[0]
     raw_data = raw_data[1]
     raw_data = raw_data.split(".")
-    binding.pry
-    name = raw_data[0].strip
+    name = raw_data[0]
     song = self.new 
     song.name = name
     song.artist_name = artist
