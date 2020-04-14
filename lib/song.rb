@@ -62,10 +62,10 @@ class Song
   
   def self.create_from_filename(file)
     raw_data = file.split(" - ")
-    binding.pry
-    artist = raw_data[0].strip
+    artist = raw_data[0]
     raw_data = raw_data[1]
     raw_data = raw_data.split(".")
+    binding.pry
     name = raw_data[0].strip
     song = self.new 
     song.name = name
